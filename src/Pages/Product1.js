@@ -2,22 +2,22 @@ import React from "react";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import Wrapper from "../components/Wrapper";
-// import ProductDetailsCarousel from "../components/ProductDetailsCarousel";
+// import ProductDetailsCarouse from "../components/ProductDetailsCarousel";
 import RelatedProducts from "../components/RelatedProducts";
-import ProductDetailsCarousel1 from "../components/ProductDetailsCarousel1";
+import ProductDetailsCarousel from "../components/ProductDetailsCarousel";
 
-const ProductDetails = () => {
+const ProductDetails1 = () => {
   return (
     <div className="w-full md:py-20">
       <Wrapper>
         <div className="flex flex-col lg:flex-row md:px-10 gap-[50px] lg:gap-[100px]">
           <div className="w-full md:w-auto flex-[1.5] max-w-[500px] lg:max-w-full mx-auto lg:mx-0">
-            <ProductDetailsCarousel1 />
+            <ProductDetailsCarousel/>
           </div>
           <div className="flex-[1] py-3">
             {/* PRODUCT TITLE */}
             <div className="text-[34px] font-semibold mb-2 leading-tight">
-              Smartphone
+              Model - T
             </div>
 
             {/* PRODUCT SUBTITLE */}
@@ -25,7 +25,7 @@ const ProductDetails = () => {
 
             {/* PRODUCT PRICE */}
             <div className="flex items-center">
-              <p className="mr-2 text-lg font-semibold">MRP : &#8377;72000</p>
+              <p className="mr-2 text-lg font-semibold">MRP : &#8377;52000</p>
               <>
                
               
@@ -77,4 +77,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default ProductDetails1;
