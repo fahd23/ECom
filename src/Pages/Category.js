@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard from "../components/ProductCard";
 import Wrapper from "../components/Wrapper";
+import ProductCard1 from "../components/ProductCard";
 
 const Category = () => {
   return (
@@ -15,14 +16,15 @@ const Category = () => {
         {/* products grid start */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-14 px-5 md:px-0">
           <ProductCard />
+          <ProductCard1 />
+
+          {/* <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard /> */}
         </div>
         {/* products grid end */}
       </Wrapper>

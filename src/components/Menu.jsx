@@ -12,16 +12,18 @@ const data = [
 ];
 
 const subMenuData = [
-  { id: 1, name: "Jordan", doc_count: 11 },
-  { id: 2, name: "Sneakers", doc_count: 8 },
-  { id: 3, name: "Running shoes", doc_count: 64 },
-  { id: 4, name: "Football shoes", doc_count: 107 },
+  { id: 1, name: "Smartphone", doc_count: 11 },
+  { id: 2, name: "Electronics", doc_count: 8 },
+  { id: 3, name: "Shoes", doc_count: 64 },
 ];
 
 const Menu = ({ showCatMenu, setShowCatMenu }) => {
 
-  const { loginWithRedirect } = useAuth0();
-  const { logout } = useAuth0();
+  // const { loginWithRedirect } = useAuth0();
+  // const { logout } = useAuth0();
+
+  const { loginWithRedirect, logout, isAuthenticate } = useAuth0();
+
   const { user, isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
@@ -65,21 +67,26 @@ const Menu = ({ showCatMenu, setShowCatMenu }) => {
         </React.Fragment>
       ))}
 
-      <button onClick={() => loginWithRedirect()}>Log In</button>
+      {isAuthenticate ? (
+        <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+          Log Out
+        </button>
+      ) : (
+        <button onClick={() => loginWithRedirect()}>Log In</button>
 
-      <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-        Log Out
-      </button>
+      )}
+
+
 
       {/* <div>
        
       </div> */}
-     { isAuthenticated && (
-      <div>
-        {/* <img src={user.picture} alt={user.name} /> */}
-        {/* <h2>{user.name}</h2> */}
-        <p>{user.email}</p>
-      </div>
+      {isAuthenticated && (
+        <div>
+          {/* <img src={user.picture} alt={user.name} /> */}
+          {/* <h2>{user.name}</h2> */}
+          <p>{user.email}</p>
+        </div>
       )}
     </ul>
 

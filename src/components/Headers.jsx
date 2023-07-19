@@ -42,7 +42,7 @@ const Header = () => {
     >
       <Wrapper className="flex justify-between items-center h-[60px]">
         <Link to="/">
-          <img src="/logo.svg" className="w-[40px] md:w-[60px]" alt="logo" />
+          <img src="/logo.png" className="w-[50px] md:w-[60px]" alt="logo" />
         </Link>
         <Menu showCatMenu={showCatMenu} setShowCatMenu={setShowCatMenu} />
         {mobileMenu && (
@@ -57,7 +57,7 @@ const Header = () => {
           <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative">
             <IoMdHeartEmpty className="text-[19px] md:text-[24px]" />
             <div className="h-[14px] md:h-[18px] min-w-[18px] rounded-full bg-red-600 absolute top-1  left-5 md:left-7 text-white text-[10px] md-text-[12px] flex justify-center items-center px-[2px] md:px-[5px]">
-              23
+              1
             </div>
           </div>
           {/* Icon End */}
@@ -66,7 +66,7 @@ const Header = () => {
             <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative">
               <BsCart className="text-[15px] md:text-[20px]" />
               <div className="h-[14px] md:h-[18px] min-w-[18px] rounded-full bg-red-600 absolute top-1  left-5 md:left-7 text-white text-[10px] md-text-[12px] flex justify-center items-center px-[2px] md:px-[5px]">
-                5
+                1
               </div>
             </div>
           </Link>

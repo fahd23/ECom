@@ -46,7 +46,7 @@ root.render(
 
   <Auth0Provider
     domain="dev-u1ka5gohcvj7n6q7.us.auth0.com"
-    clientId="QRm480enxJTwECuex7oZXiYlyPMmDE81"
+    clientId="Ij7kI1A84UUWJFqwGHDAwoNhpD7Fiir5"
     authorizationParams={{
       redirect_uri: window.location.origin
     }}

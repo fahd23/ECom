@@ -29,11 +29,11 @@ const RelatedProducts = () => {
         itemClass="px-[10px]"
       >
         <ProductCard />
+        {/* <ProductCard /> */}
+        {/* <ProductCard />
         <ProductCard />
         <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard /> */}
       </Carousel>
     </div>
   );
