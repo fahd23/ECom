@@ -9,7 +9,7 @@ import Category from "./Pages/Category";
 import Product from "./Pages/Product";
 import SuccessPayment from "./Pages/SuccessPayment";
 import FailedPayment from "./Pages/FailedPayment";
-import { Auth0Provider } from '@auth0/auth0-react';
+import { Auth0Provider } from "@auth0/auth0-react";
 
 const router = createBrowserRouter([
   {
@@ -43,18 +43,15 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-
   <Auth0Provider
     domain="dev-u1ka5gohcvj7n6q7.us.auth0.com"
     clientId="Ij7kI1A84UUWJFqwGHDAwoNhpD7Fiir5"
     authorizationParams={{
-      redirect_uri: window.location.origin
+      redirect_uri: window.location.origin,
     }}
   >
     <React.StrictMode>
       <RouterProvider router={router} />
     </React.StrictMode>
   </Auth0Provider>
-
-
 );

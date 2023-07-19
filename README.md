@@ -1,3 +1,3 @@
 # Ecommerce Web app
 
-- React
+- Created using Create React App
