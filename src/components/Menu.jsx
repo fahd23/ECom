@@ -22,13 +22,12 @@ const Menu = ({ showCatMenu, setShowCatMenu }) => {
   // const { loginWithRedirect } = useAuth0();
   // const { logout } = useAuth0();
 
-  const { loginWithRedirect, logout, isAuthenticate } = useAuth0();
-
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, isLoading, loginWithRedirect, logout } = useAuth0();
 
   if (isLoading) {
     return <div>Loading ...</div>;
   }
+
 
 
 
@@ -67,13 +66,12 @@ const Menu = ({ showCatMenu, setShowCatMenu }) => {
         </React.Fragment>
       ))}
 
-      {isAuthenticate ? (
+      {isAuthenticated ? (
         <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
           Log Out
         </button>
       ) : (
         <button onClick={() => loginWithRedirect()}>Log In</button>
-
       )}
 
 
@@ -83,8 +81,6 @@ const Menu = ({ showCatMenu, setShowCatMenu }) => {
       </div> */}
       {isAuthenticated && (
         <div>
-          {/* <img src={user.picture} alt={user.name} /> */}
-          {/* <h2>{user.name}</h2> */}
           <p>{user.email}</p>
         </div>
       )}

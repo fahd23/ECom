@@ -41,9 +41,7 @@ const CartItem = () => {
                   <option value="1">UK 6</option>
                   <option value="1">UK 7</option>
                   <option value="1">UK 8</option>
-                  <option value="1">UK 9</option>
-                  <option value="1">UK 10</option>
-                  <option value="1">UK 11</option>
+                 
                 </select>
               </div>
               <div className="flex items-center gap-1">
@@ -54,10 +52,7 @@ const CartItem = () => {
                   <option value="1">3</option>
                   <option value="1">4</option>
                   <option value="1">5</option>
-                  <option value="1">6</option>
-                  <option value="1">7</option>
-                  <option value="1">8</option>
-                  <option value="1">9</option>
+               
                 </select>
               </div>
             </div>
